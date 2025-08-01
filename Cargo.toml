@@ -9,5 +9,8 @@ members = [
 [workspace.dependencies]
 virtio-bindings = "0.2.6"
 virtio-queue = "0.16.0"
-vm-memory = "0.16.2"
+vm-memory = "0.16.3"
 vmm-sys-util = "0.14.0"
+
+[patch.crates-io]
+vm-memory = { git = "https://github.com/ELginas/vm-memory.git" }

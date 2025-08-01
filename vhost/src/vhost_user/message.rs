@@ -17,7 +17,9 @@ use std::ops::Deref;
 
 use uuid::Uuid;
 
-use vm_memory::{mmap::NewBitmap, ByteValued, Error as MmapError, FileOffset, MmapRegion};
+use vm_memory::{
+    mmap::FromRangesError as MmapError, mmap::NewBitmap, ByteValued, FileOffset, MmapRegion,
+};
 
 #[cfg(feature = "xen")]
 use vm_memory::{GuestAddress, MmapRange, MmapXenFlags};
